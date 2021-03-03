@@ -4,7 +4,7 @@ import { FireIcon, MusicIcon } from "./assets/icons/index";
 import "./styles/globalStyle.css";
 import Header from "./components/Header";
 import TrendingCards from "./components/TrendingCards";
-import AllMusicCards from "./components/AllMusicCards";
+import AllSongsCards from "./components/AllSongsCards";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("trending");
@@ -18,7 +18,7 @@ function App() {
     all: {
       icon: <MusicIcon />,
       text: "All Songs",
-      component: <AllMusicCards />,
+      component: <AllSongsCards />,
     },
   };
 

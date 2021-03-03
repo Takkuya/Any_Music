@@ -11,7 +11,7 @@ import Plagiarism from "../Plagiarism.jpg";
 import Elma from "../Elma.jpg";
 import ActII from "../ActII.jpg";
 
-export const musicas = [
+export const Songs = [
   {
     id: 0,
     nome: "Sacred Hearts Club",
