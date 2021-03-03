@@ -6,7 +6,6 @@ export default function Header() {
       <Flex justify="space-between">
         <Text
           color="blue.500"
-          //   bgClip="text"
           fontSize="5xl"
           fontWeight="extrabold"
           marginX="1.5rem"

@@ -1,1 +1,4 @@
-export { AiFillFire as FireIcon } from "react-icons/all";
+export {
+  AiFillFire as FireIcon,
+  MdMusicNote as MusicIcon,
+} from "react-icons/all";
