@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider, Box } from "@chakra-ui/react";
+import "./styles/globalStyle.css";
+import Header from "./components/Header";
+import TrendingCards from "./components/TrendingCards";
+import MusicCards from "./components/MusicCards";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+      <div className="App">
+        <Box background="#333">
+          <Header />
+        </Box>
+        <Box background="#404040">
+          <TrendingCards />
+        </Box>
+        {/* <Box background="#404040">
+          <MusicCards />
+        </Box> */}
+      </div>
+    </ChakraProvider>
   );
 }
 
