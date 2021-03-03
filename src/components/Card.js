@@ -18,7 +18,7 @@ export default function Card({ itens }) {
           filter: "brightness(80%)",
         }}
       >
-        <Image src={imagem} alt="autismo" boxSize="14rem" />
+        <Image src={imagem} alt={banda} boxSize="14rem" />
 
         <Text
           fontSize="md"

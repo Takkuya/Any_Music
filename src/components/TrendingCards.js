@@ -5,12 +5,7 @@ import Card from "./Card";
 export default function TrendingCards() {
   return (
     <div>
-      <Flex
-        justify="space-between"
-        flexWrap="wrap"
-        maxHeight="80vh"
-        overflowY="scroll"
-      >
+      <Flex justify="space-between" flexWrap="wrap" overflowY="scroll">
         {TrendingSongs.map((itens) => (
           <Card itens={itens} />
         ))}

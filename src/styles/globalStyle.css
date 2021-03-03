@@ -3,6 +3,9 @@
 }
 
 html,
-#root {
+body,
+#root,
+.App {
   background-color: #404040;
+  min-height: 100vh;
 }
