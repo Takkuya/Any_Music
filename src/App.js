@@ -61,7 +61,7 @@ function App() {
             </Flex>
           </Text>
         </Flex>
-        <Box background="#404040">{current[currentPage].component}</Box>
+        <Box background="#404040">{current[currentPage].component} </Box>
       </div>
     </ChakraProvider>
   );

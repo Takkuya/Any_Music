@@ -1,4 +1,6 @@
-import { Flex, Text, Button, Input } from "@chakra-ui/react";
+import { Flex, Text, Input } from "@chakra-ui/react";
+import LoginModal from "./Modals/LoginModal";
+import RegisterModal from "./Modals/RegisterModal";
 
 export default function Header() {
   return (
@@ -23,12 +25,8 @@ export default function Header() {
         </Flex>
 
         <Flex align="center">
-          <Button colorScheme="blue" variant="outline" marginX="1rem">
-            Login
-          </Button>
-          <Button colorScheme="blue" marginX="1rem">
-            Cadastro
-          </Button>
+          <LoginModal />
+          <RegisterModal />
         </Flex>
       </Flex>
     </>

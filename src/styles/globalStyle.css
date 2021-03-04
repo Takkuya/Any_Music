@@ -9,3 +9,8 @@ body,
   background-color: #404040;
   min-height: 100vh;
 }
+
+.HeaderModal {
+  display: flex;
+  align-items: center;
+}
