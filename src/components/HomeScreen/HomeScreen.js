@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Box, Flex, Text, Button } from "@chakra-ui/react";
 import { FireIcon, MusicIcon } from "../../assets/icons";
 
-import Header from "../Header";
 import TrendingCards from "./TrendingCards";
 import AllSongsCards from "./AllSongsCards";
 
