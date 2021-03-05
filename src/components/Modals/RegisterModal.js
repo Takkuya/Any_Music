@@ -15,9 +15,10 @@ import {
   Input,
   Text,
   InputRightElement,
+  Icon,
 } from "@chakra-ui/react";
 
-import { ClosedEyeIcon, OpenEyeIcon } from "../../assets/icons";
+import { ClosedEyeIcon, OpenEyeIcon, GoogleIcon } from "../../assets/icons";
 
 export default function RegisterModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -46,6 +47,13 @@ export default function RegisterModal() {
           </ModalHeader>
 
           <ModalBody backgroundColor="#404040">
+            <FormControl align="center">
+              <Button colorScheme="blue.600" padding="1rem" variant="solid">
+                <Icon as={GoogleIcon} width="1.5rem" height="1.5rem" />
+                <Text paddingLeft="0.4rem">Entrar com o Google</Text>
+              </Button>
+            </FormControl>
+
             <FormControl marginY="0.5rem">
               <FormLabel>E-mail</FormLabel>
               <Input type="text" placeholder="E-mail" borderColor="#fff6" />

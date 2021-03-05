@@ -100,13 +100,14 @@ export const Songs = [
     musicas: "14",
     imagem: Plagiarism,
   },
+
   {
     id: 0,
-    nome: "Act II",
+    nome: "The Attractions of Youth",
     data: "2020",
-    banda: "The Protomen",
-    musicas: "11",
-    imagem: ActII,
+    banda: "Barns Courtney",
+    musicas: " 39",
+    imagem: TAOY,
   },
 ];
 
@@ -118,6 +119,14 @@ export const TrendingSongs = [
     banda: "Barns Courtney",
     musicas: " 39",
     imagem: TAOY,
+  },
+  {
+    id: 0,
+    nome: "Too Weird to Live; Too Rare To Die!",
+    data: "2013",
+    banda: "Panic! At the Disco",
+    musicas: "8",
+    imagem: TWLTRD,
   },
   {
     id: 0,
@@ -207,5 +216,21 @@ export const TrendingSongs = [
     banda: "Barns Courtney",
     musicas: " 39",
     imagem: TAOY,
+  },
+  {
+    id: 0,
+    nome: "Death of a Bachelor",
+    data: "2016",
+    banda: "Panic! At the Disco",
+    musicas: "11",
+    imagem: DOAB,
+  },
+  {
+    id: 0,
+    nome: "Elma",
+    data: "2019",
+    banda: "Yorushika",
+    musicas: " 13",
+    imagem: Elma,
   },
 ];

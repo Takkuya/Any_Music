@@ -1,8 +1,18 @@
+// import { useState } from "react";
+
 import { Flex, Text, Input } from "@chakra-ui/react";
 import LoginModal from "./Modals/LoginModal";
 import RegisterModal from "./Modals/RegisterModal";
 
 export default function Header() {
+  // const [inputText, setInputText] = useState("");
+
+  // function filterTasksHandler(e) {
+  //   setInputText(e.target.value);
+
+  //   console.log(inputText);
+  // }
+
   return (
     <>
       <Flex justify="space-between">
@@ -21,6 +31,8 @@ export default function Header() {
             variant="flushed"
             color="#fff"
             width="30rem"
+            // setInputText={setInputText}
+            // onChange={filterTasksHandler}
           />
         </Flex>
 

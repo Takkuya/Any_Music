@@ -1,4 +1,5 @@
 import { Box, Text, Image, Flex } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export default function Card({ itens }) {
   const { imagem, nome, data, banda, musicas } = itens;
@@ -30,7 +31,7 @@ export default function Card({ itens }) {
           {nome}
         </Text>
         <Text fontSize="md" align="center">
-          {banda}
+          <Link to="/artist">{banda}</Link>
         </Text>
 
         <Flex justify="space-between" align="center" margin="1rem">
