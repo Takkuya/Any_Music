@@ -27,10 +27,21 @@ export default function Card({ itens }) {
           align="center"
           margin="0.5rem"
           fontWeight="semibold"
+          _hover={{
+            transition: "color 0.2s",
+            color: "blue.500",
+          }}
         >
           {nome}
         </Text>
-        <Text fontSize="md" align="center">
+        <Text
+          fontSize="md"
+          align="center"
+          _hover={{
+            transition: "color 0.2s",
+            color: "blue.500",
+          }}
+        >
           <Link to="/artist">{banda}</Link>
         </Text>
 
