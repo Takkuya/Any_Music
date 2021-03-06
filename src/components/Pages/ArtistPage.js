@@ -18,8 +18,8 @@ export default function ArtistPage({ match }) {
 
   return (
     <>
-      <Image src={artist.imagem} alt={artist.nome} />
-      <Text>{artist.nome}</Text>
+      <Image src={artist.image} alt={artist.name} />
+      <Text>{artist.name}</Text>
     </>
   );
 }

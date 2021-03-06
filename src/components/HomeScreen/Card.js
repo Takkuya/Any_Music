@@ -2,7 +2,7 @@ import { Box, Text, Image, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export default function Card({ itens }) {
-  const { id, imagem, nome, data, banda, musicas } = itens;
+  const { id, image, name, date, artist, musics } = itens;
 
   return (
     <>
@@ -20,7 +20,7 @@ export default function Card({ itens }) {
         }}
       >
         <Link to={`/albumpage/${id}`}>
-          <Image src={imagem} alt={banda} boxSize="14rem" />
+          <Image src={image} alt={artist} boxSize="14rem" />
 
           <Text
             fontSize="md"
@@ -33,7 +33,7 @@ export default function Card({ itens }) {
               color: "blue.500",
             }}
           >
-            {nome}
+            {name}
           </Text>
         </Link>
         <Text
@@ -44,12 +44,12 @@ export default function Card({ itens }) {
             color: "blue.500",
           }}
         >
-          <Link to={`/artistpage/${id}`}>{banda}</Link>
+          <Link to={`/artistpage/${id}`}>{artist}</Link>
         </Text>
 
         <Flex justify="space-between" align="center" margin="1rem">
-          <Text fontSize="md">Ano: {data}</Text>
-          <Text fontSize="md">Músicas: {musicas}</Text>
+          <Text fontSize="md">Ano: {date}</Text>
+          <Text fontSize="md">Músicas: {musics}</Text>
         </Flex>
       </Box>
     </>

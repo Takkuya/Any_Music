@@ -15,9 +15,9 @@ export default function AlbumPages({ match }) {
   return (
     <>
       <Box color="white" d="flex" justify="space-between">
-        <Image src={song.imagem} alt={song.nome} boxSize="14.5rem" />
+        <Image src={song.image} alt={song.name} boxSize="14.5rem" />
         <Text d="flex" align="center" fontSize="6xl" fontWeight="600">
-          {song.nome}
+          {song.name}
         </Text>
       </Box>
     </>
