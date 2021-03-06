@@ -14,3 +14,8 @@ body,
   display: flex;
   align-items: center;
 }
+.search-icon {
+  fill: white;
+  height: 2rem;
+  width: 2rem;
+}

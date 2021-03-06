@@ -2,7 +2,7 @@ import { Box, Text, Image, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export default function Card({ itens }) {
-  const { imagem, nome, data, banda, musicas } = itens;
+  const { id, imagem, nome, data, banda, musicas } = itens;
 
   return (
     <>
@@ -15,34 +15,36 @@ export default function Card({ itens }) {
         padding="0.5rem"
         cursor="pointer"
         _hover={{
-          transition: "filter 0.2s",
-          filter: "brightness(80%)",
+          transform: "scale(1.04,1.04)",
+          transition: "transform 0.2s ease",
         }}
       >
-        <Image src={imagem} alt={banda} boxSize="14rem" />
+        <Link to={`/albumpage/${id}`}>
+          <Image src={imagem} alt={banda} boxSize="14rem" />
 
+          <Text
+            fontSize="md"
+            wordBreak="break-word"
+            align="center"
+            margin="0.5rem"
+            fontWeight="semibold"
+            _hover={{
+              transition: "color 0.2s",
+              color: "blue.500",
+            }}
+          >
+            {nome}
+          </Text>
+        </Link>
         <Text
           fontSize="md"
-          wordBreak="break-word"
           align="center"
-          margin="0.5rem"
-          fontWeight="semibold"
           _hover={{
             transition: "color 0.2s",
             color: "blue.500",
           }}
         >
-          {nome}
-        </Text>
-        <Text
-          fontSize="md"
-          align="center"
-          _hover={{
-            transition: "color 0.2s",
-            color: "blue.500",
-          }}
-        >
-          <Link to="/artist">{banda}</Link>
+          <Link to={`/artistpage/${id}`}>{banda}</Link>
         </Text>
 
         <Flex justify="space-between" align="center" margin="1rem">

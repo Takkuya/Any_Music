@@ -3,7 +3,8 @@ import "./styles/globalStyle.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { ChakraProvider, Box } from "@chakra-ui/react";
 import HomeScreen from "./components/HomeScreen/HomeScreen";
-import ArtistPage from "./components/ArtistPage";
+import ArtistPage from "./components/Pages/ArtistPage";
+import AlbumPages from "./components/Pages/AlbumPages";
 import Header from "./components/Header";
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
           </Box>
           <Switch>
             <Route path="/" component={HomeScreen} exact />
-            <Route path="/artist" component={ArtistPage} />
+            <Route path="/artistpage/:id" component={ArtistPage} />
+            <Route path="/albumpage/:id" component={AlbumPages} />
           </Switch>
         </div>
       </BrowserRouter>

@@ -1,6 +1,14 @@
 // import { useState } from "react";
 
-import { Flex, Text, Input } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Input,
+  InputGroup,
+  InputLeftAddon,
+} from "@chakra-ui/react";
+import { SearchIcon } from "../assets/icons";
+import { Link } from "react-router-dom";
 import LoginModal from "./Modals/LoginModal";
 import RegisterModal from "./Modals/RegisterModal";
 
@@ -16,24 +24,33 @@ export default function Header() {
   return (
     <>
       <Flex justify="space-between">
-        <Text
-          color="blue.500"
-          fontSize="5xl"
-          fontWeight="extrabold"
-          marginX="1.5rem"
-        >
-          ANY MUSIC
-        </Text>
+        <Link to="/">
+          <Text
+            color="blue.500"
+            fontSize="5xl"
+            fontWeight="extrabold"
+            marginX="1.5rem"
+          >
+            ANY MUSIC
+          </Text>
+        </Link>
 
         <Flex align="center">
-          <Input
-            placeholder="Pesquisar..."
-            variant="flushed"
-            color="#fff"
-            width="30rem"
-            // setInputText={setInputText}
-            // onChange={filterTasksHandler}
-          />
+          <InputGroup>
+            <InputLeftAddon
+              children={<SearchIcon className="search-icon" />}
+              background="#0000"
+              border="none"
+            />
+            <Input
+              placeholder="Pesquisar..."
+              variant="flushed"
+              color="#fff"
+              width="30rem"
+              // setInputText={setInputText}
+              // onChange={filterTasksHandler}
+            />
+          </InputGroup>
         </Flex>
 
         <Flex align="center">
