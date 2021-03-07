@@ -5,4 +5,7 @@ export {
   IoMdEye as OpenEyeIcon,
   FcGoogle as GoogleIcon,
   MdSearch as SearchIcon,
+  AiFillHeart as FillHeartIcon,
+  AiOutlinePlus as PlusIcon,
+  AiOutlineMinus as MinusIcon,
 } from "react-icons/all";
