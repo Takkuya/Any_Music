@@ -4,12 +4,15 @@ import Card from "./Card";
 
 export default function TrendingCards() {
   return (
-    <div>
-      <SimpleGrid minChildWidth="252px" spacing="20px" overflowY="scroll">
-        {Songs.map((itens) => (
-          <Card itens={itens} />
-        ))}
-      </SimpleGrid>
-    </div>
+    <SimpleGrid
+      columns={{ sm: 2, md: 3, lg: 4, xl: 7 }}
+      spacing="20px"
+      overflowY="auto"
+      margin="20px"
+    >
+      {Songs.map((itens) => (
+        <Card itens={itens} />
+      ))}
+    </SimpleGrid>
   );
 }

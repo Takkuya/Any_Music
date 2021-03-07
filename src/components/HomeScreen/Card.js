@@ -2,16 +2,13 @@ import { Box, Text, Image, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export default function Card({ itens }) {
-  const { id, image, name, date, artist, musics } = itens;
+  const { id, image, name, releaseDate, artist, musics } = itens;
 
   return (
     <>
       <Box
         color="white"
         background="#333"
-        maxWidth="15rem"
-        margin="1rem"
-        width="100%"
         padding="0.5rem"
         cursor="pointer"
         _hover={{
@@ -20,7 +17,13 @@ export default function Card({ itens }) {
         }}
       >
         <Link to={`/albumpage/${id}`}>
-          <Image src={image} alt={artist} boxSize="14rem" />
+          <Image
+            src={image}
+            alt={artist}
+            maxWidth="100%"
+            height="auto"
+            width="100%"
+          />
 
           <Text
             fontSize="md"
@@ -48,7 +51,7 @@ export default function Card({ itens }) {
         </Text>
 
         <Flex justify="space-between" align="center" margin="1rem">
-          <Text fontSize="md">Ano: {date}</Text>
+          <Text fontSize="md">Ano: {releaseDate}</Text>
           <Text fontSize="md">Músicas: {musics}</Text>
         </Flex>
       </Box>
