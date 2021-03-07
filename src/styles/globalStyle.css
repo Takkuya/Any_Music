@@ -9,7 +9,10 @@ body,
   background-color: #404040;
   min-height: 100vh;
 }
-
+.App {
+  display: flex;
+  flex-direction: column;
+}
 .HeaderModal {
   display: flex;
   align-items: center;
