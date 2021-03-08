@@ -23,6 +23,7 @@ export const Songs = [
     musics: " 9",
     image: SHC,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 1,
@@ -31,9 +32,18 @@ export const Songs = [
     artist: "Panic! At the Disco",
     artistImage: Brendon,
     musics: "11",
+    musicsInfo: [
+      ...Array(8).fill({
+        title: "Placeholder",
+        duration: 3.42,
+        playCount: 233456,
+      }),
+    ],
     image: PFTW,
     type: "Album",
+    color: "#ff0000",
   },
+
   {
     id: 2,
     name: "Torches",
@@ -43,6 +53,7 @@ export const Songs = [
     musics: "10",
     image: Torches,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 3,
@@ -53,6 +64,7 @@ export const Songs = [
     musics: "10",
     image: Supermodel,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 4,
@@ -63,6 +75,7 @@ export const Songs = [
     musics: "8",
     image: TWLTRD,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 5,
@@ -73,6 +86,7 @@ export const Songs = [
     musics: "12",
     image: AFYCSO,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 6,
@@ -83,6 +97,7 @@ export const Songs = [
     musics: "11",
     image: DOAB,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 7,
@@ -93,6 +108,7 @@ export const Songs = [
     musics: " 13",
     image: Elma,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 8,
@@ -103,6 +119,7 @@ export const Songs = [
     musics: " 39",
     image: TAOY,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 9,
@@ -113,6 +130,7 @@ export const Songs = [
     musics: "9",
     image: Stories,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 10,
@@ -123,6 +141,7 @@ export const Songs = [
     musics: "14",
     image: Plagiarism,
     type: "Album",
+    color: "#ff0000",
   },
 
   {
@@ -134,6 +153,7 @@ export const Songs = [
     musics: " 39",
     image: TAOY,
     type: "Album",
+    color: "#ff0000",
   },
   {
     id: 112,
@@ -144,6 +164,7 @@ export const Songs = [
     musics: " 59",
     image: ActII,
     type: "Album",
+    color: "#ff0000",
   },
 ];
 
