@@ -1,32 +1,27 @@
-import { useState } from "react";
+import { useContext } from "react";
 
-import { Box, Flex, Text, Button } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, SimpleGrid } from "@chakra-ui/react";
 import { FireIcon, MusicIcon } from "../../assets/icons";
-
-import TrendingCards from "./TrendingCards";
-import AllSongsCards from "./AllSongsCards";
+import Card from "./Card";
+import { SongContext } from "../Context/SongContext";
 
 export default function HomeScreen() {
-  const [currentPage, setCurrentPage] = useState("trending");
-
+  const {
+    currentPage,
+    songData,
+    setCurrentPage,
+    changeCurrentPage,
+  } = useContext(SongContext);
   const current = {
     trending: {
       icon: <FireIcon />,
       text: "Trending Songs",
-      component: <TrendingCards />,
     },
     all: {
       icon: <MusicIcon />,
       text: "All Songs",
-      component: <AllSongsCards />,
     },
   };
-
-  function changeCurrentPage() {
-    const newPage = currentPage === "trending" ? "all" : "trending";
-    setCurrentPage(newPage);
-  }
-
   return (
     <>
       <Flex justify="flex-start" align="center" width="100%" background="#333">
@@ -45,14 +40,23 @@ export default function HomeScreen() {
               colorScheme="blue"
               onClick={() => changeCurrentPage()}
             >
-              {currentPage === "trending"
-                ? current.all.text
-                : current.trending.text}
+              {current[currentPage === "trending" ? "all" : "trending"].text}
             </Button>
           </Flex>
         </Text>
       </Flex>
-      <Box background="#404040">{current[currentPage].component} </Box>
+      <Box background="#404040">
+        <SimpleGrid
+          columns={{ sm: 2, md: 3, lg: 4, xl: 7 }}
+          spacing="20px"
+          overflowY="auto"
+          margin="20px"
+        >
+          {songData.map((itens) => (
+            <Card itens={itens} />
+          ))}
+        </SimpleGrid>
+      </Box>
     </>
   );
 }

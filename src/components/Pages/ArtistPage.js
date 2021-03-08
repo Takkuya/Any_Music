@@ -80,7 +80,7 @@ export default function ArtistPage({ match }) {
         </Text>
 
         <SimpleGrid
-          columns={{ sm: 2, md: 3, lg: 4, xl: 7 }}
+          columns={{ sm: 2, md: 3, lg: 4, xl: 5 }}
           spacing="20px"
           overflowY="auto"
           margin="20px"

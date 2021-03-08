@@ -2,6 +2,7 @@ import "./styles/globalStyle.css";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { ChakraProvider, Box } from "@chakra-ui/react";
+
 import HomeScreen from "./components/HomeScreen/HomeScreen";
 import ArtistPage from "./components/Pages/ArtistPage";
 import AlbumPages from "./components/Pages/AlbumPages";

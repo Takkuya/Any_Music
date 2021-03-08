@@ -24,6 +24,7 @@ export const Songs = [
     image: SHC,
     type: "Album",
     color: "#ff0000",
+    playCount: 100,
   },
   {
     id: 1,
@@ -39,6 +40,7 @@ export const Songs = [
         playCount: 233456,
       }),
     ],
+    playCount: 354000,
     image: PFTW,
     type: "Album",
     color: "#ff0000",
@@ -54,6 +56,7 @@ export const Songs = [
     image: Torches,
     type: "Album",
     color: "#ff0000",
+    playCount: 200,
   },
   {
     id: 3,
@@ -65,6 +68,7 @@ export const Songs = [
     image: Supermodel,
     type: "Album",
     color: "#ff0000",
+    playCount: 343100,
   },
   {
     id: 4,
@@ -76,6 +80,7 @@ export const Songs = [
     image: TWLTRD,
     type: "Album",
     color: "#ff0000",
+    playCount: 1235234200,
   },
   {
     id: 5,
@@ -87,6 +92,7 @@ export const Songs = [
     image: AFYCSO,
     type: "Album",
     color: "#ff0000",
+    playCount: 1567656756700,
   },
   {
     id: 6,
@@ -98,6 +104,7 @@ export const Songs = [
     image: DOAB,
     type: "Album",
     color: "#ff0000",
+    playCount: 1001232193891273821,
   },
   {
     id: 7,
@@ -109,6 +116,7 @@ export const Songs = [
     image: Elma,
     type: "Album",
     color: "#ff0000",
+    playCount: 0,
   },
   {
     id: 8,
@@ -120,6 +128,7 @@ export const Songs = [
     image: TAOY,
     type: "Album",
     color: "#ff0000",
+    playCount: 100000,
   },
   {
     id: 9,
@@ -131,6 +140,7 @@ export const Songs = [
     image: Stories,
     type: "Album",
     color: "#ff0000",
+    playCount: 100123123,
   },
   {
     id: 10,
@@ -142,6 +152,7 @@ export const Songs = [
     image: Plagiarism,
     type: "Album",
     color: "#ff0000",
+    playCount: 1012320,
   },
 
   {
@@ -154,6 +165,7 @@ export const Songs = [
     image: TAOY,
     type: "Album",
     color: "#ff0000",
+    playCount: 100,
   },
   {
     id: 112,
@@ -165,6 +177,7 @@ export const Songs = [
     image: ActII,
     type: "Album",
     color: "#ff0000",
+    playCount: 1001312331231,
   },
 ];
 
