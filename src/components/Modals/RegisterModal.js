@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import {
   Modal,
@@ -19,9 +19,11 @@ import {
 } from "@chakra-ui/react";
 
 import { ClosedEyeIcon, OpenEyeIcon, GoogleIcon } from "../../assets/icons";
+import { AuthContext } from "../Context/AuthContext";
 
 export default function RegisterModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { startAuthentication } = useContext(AuthContext);
 
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
@@ -51,6 +53,17 @@ export default function RegisterModal() {
               <Button colorScheme="blue.600" padding="1rem" variant="solid">
                 <Icon as={GoogleIcon} width="1.5rem" height="1.5rem" />
                 <Text paddingLeft="0.4rem">Entrar com o Google</Text>
+              </Button>
+            </FormControl>
+            <FormControl align="center">
+              <Button
+                colorScheme="blue.600"
+                padding="1rem"
+                variant="solid"
+                onClick={startAuthentication}
+              >
+                <Icon as={GoogleIcon} width="1.5rem" height="1.5rem" />
+                <Text paddingLeft="0.4rem">Entrar com o Spotify</Text>
               </Button>
             </FormControl>
 
